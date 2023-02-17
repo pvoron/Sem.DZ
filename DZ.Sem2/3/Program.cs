@@ -7,8 +7,6 @@
 
 Console.WriteLine("Введите число дня недели");
 int number = Convert.ToInt32(Console.ReadLine());
-
-
 int daysOfMonth = 31;
 int dateOfFirstMondey = 1;
 int dateOfFirstSaturday = dateOfFirstMondey + 5;
@@ -31,21 +29,3 @@ else
 {
     Console.WriteLine(number + "- будний день");
 }
-
-//Console.WriteLine(number);
-
-//if (number <= daysOfMonth)
-//{
-    //if (number == dateOfFirstMondey += 6 || number == dateOfFirstMondey += 7)
-   // {
-   //     Console.WriteLine(number + "- выходной день");
-   // }
-   // else
-//{
-   //      Console.WriteLine(number + "- будний день");
-  //  }
-//}
-//else
-//{
-  //  Console.WriteLine("число введено некорректно");
-//}
