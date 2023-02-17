@@ -7,25 +7,62 @@
 
 Console.WriteLine("Введите число дня недели");
 int number = Convert.ToInt32(Console.ReadLine());
+
 int daysOfMonth = 31;
 int dateOfFirstMondey = 1;
+int dateOfFirstTuesday= dateOfFirstMondey + 1;
+int dateOfFirstWednesday = dateOfFirstMondey + 2;
+int dateOfFirstThursday = dateOfFirstMondey + 3;
+int dateOfFirstFriday = dateOfFirstMondey + 4;
 int dateOfFirstSaturday = dateOfFirstMondey + 5;
 int dateOfFirstSunday = dateOfFirstMondey + 6;
 
-while (number <= daysOfMonth)
+for (int i = dateOfFirstMondey; i <= daysOfMonth; i = i + 7)
 {
-    dateOfFirstSaturday += 7;
-    dateOfFirstSunday += 7;
+    if (number == i)
+    {
+        Console.WriteLine(number + "- будний день");
+    }
 }
-if(number % dateOfFirstSaturday == 0)
+for (int i = dateOfFirstTuesday; i <= daysOfMonth; i = i + 7)
 {
-    Console.WriteLine(number + "- выходной день");
+    if (number == i)
+    {
+        Console.WriteLine(number + "- будний день");
+    }
 }
-else if (number % dateOfFirstSunday == 0)
+for (int i = dateOfFirstWednesday; i <= daysOfMonth; i = i + 7)
 {
-    Console.WriteLine(number + "- выходной день");
+    if (number == i)
+    {
+        Console.WriteLine(number + "- будний день");
+    }
 }
-else
+for (int i = dateOfFirstThursday; i <= daysOfMonth; i = i + 7)
 {
-    Console.WriteLine(number + "- будний день");
+    if (number == i)
+    {
+        Console.WriteLine(number + "- будний день");
+    }
+}
+for (int i = dateOfFirstFriday; i <= daysOfMonth; i = i + 7)
+{
+    if (number == i)
+    {
+        Console.WriteLine(number + "- будний день");
+    }
+}
+for (int i = dateOfFirstSaturday; i <= daysOfMonth; i = i + 7)
+{
+    if (number == i)
+    {
+        Console.WriteLine(number + "- выходной день");
+    }
+}
+for (int i = dateOfFirstSunday; i <= daysOfMonth; i = i + 7)
+{
+    if (number == i)
+    {
+        Console.WriteLine(number + "- выходной день");
+    }
 }
