@@ -7,13 +7,9 @@
 Console.WriteLine("Введите трёхзначное число");
 int number = Convert.ToInt32(Console.ReadLine());
 
-if (number > 100 && number < 1000)
-{
-    int lastDigit = number / 10;
-    int middleDigit = lastDigit % 10;
+while (number >= 100)
+    {
+        number /= 10;
+    }
+    int middleDigit = number % 10;
     Console.WriteLine(middleDigit);
-}
-else
-{
-    Console.WriteLine("Введено некорректное число");
-}
