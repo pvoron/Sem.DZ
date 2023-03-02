@@ -44,4 +44,4 @@ int[] myArray = GetRandomArray(lengthOfArray, leftBorder, rightBorder);
 Console.WriteLine($"[{string.Join(", ", myArray)}]");                                   // Вывод массива
 
 int Sum = NumberOfOdd(myArray);
-Console.WriteLine($"Количество четных элементов - {Sum}");
+Console.WriteLine($"Сумма элементов - {Sum}");
