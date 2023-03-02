@@ -20,10 +20,10 @@ int[] GetRandomArray(int length, int leftRange, int rightRange)        //Мет�
     return array;
 }
 
-double DifOfMaxAndMin(int[] array)                                          // Метод, возвращающий разницу max и min чисел массива
+int DifOfMaxAndMin(int[] array)                                          // Метод, возвращающий разницу max и min чисел массива
 {
-    double max = array[0];
-    double min = array[0];
+    int max = array[0];
+    int min = array[0];
        for(int i = 0; i < array.Length; i++)
     {
         if(array[i] > max)
@@ -36,7 +36,7 @@ double DifOfMaxAndMin(int[] array)                                          // �
         }
     }
     
-    double dif = max - min;
+    int dif = max - min;
     return dif;
 }
 
@@ -48,5 +48,5 @@ int rightBorder = ReadNumber("Задайте правую границу мас�
 int[] myArray = GetRandomArray(lengthOfArray, leftBorder, rightBorder);
 Console.WriteLine($"[{string.Join(", ", myArray)}]");                                   // Вывод массива
 
-double dif = DifOfMaxAndMin(myArray);
+int dif = DifOfMaxAndMin(myArray);
 Console.WriteLine($"Разница между max и min - {dif}");
