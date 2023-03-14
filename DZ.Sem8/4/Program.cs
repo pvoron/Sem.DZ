@@ -4,21 +4,11 @@
 //12(0,0,0) 22(0,0,1)
 //45(1,0,0) 53(1,0,1)
 
-Console.WriteLine($"Введите размер массива X x Y x Z: ");
-int x = InputNumbers("Введите X: ");
-int y = InputNumbers("Введите Y: ");
-int z = InputNumbers("Введите Z: ");
-Console.WriteLine($"");
-
-int[,,] array3D = new int[x, y, z];
-CreateArray(array3D);
-WriteArray(array3D);
-
-int InputNumbers(string input)
+int ReadNumber(string messageToUser)
 {
-  Console.Write(input);
-  int output = Convert.ToInt32(Console.ReadLine());
-  return output;
+    Console.WriteLine(messageToUser);
+    int value = Convert.ToInt32(Console.ReadLine());
+    return value;
 }
 
 void WriteArray (int[,,] array3D)
@@ -73,3 +63,13 @@ void CreateArray(int[,,] array3D)
     }
   }
 }
+
+Console.WriteLine($"Введите размер массива X x Y x Z: ");
+int x = ReadNumber("Введите X: ");
+int y = ReadNumber("Введите Y: ");
+int z = ReadNumber("Введите Z: ");
+Console.WriteLine($"");
+
+int[,,] array3D = new int[x, y, z];
+CreateArray(array3D);
+WriteArray(array3D);
