@@ -1,4 +1,4 @@
-﻿// Задача 57: Задайте двумерный массив. Напишите программу, которая упорядочит по возрастанию 
+﻿// Задача 54: Задайте двумерный массив. Напишите программу, которая упорядочит по возрастанию 
 //элементы каждой строки двумерного массива.
 //Например, задан массив:
 //1 4 7 2
@@ -70,6 +70,6 @@ int leftBorder = ReadNumser("Введите левую границу");
 int rightBorder = ReadNumser("Введите правую границу");
 int[,] myMatrix = GetRandomMatrix(m, n, leftBorder, rightBorder);
 PrintMatrix(myMatrix);
-Console.WriteLine("______________________________________");
+Console.WriteLine("____________________________________");
 int[,] myNewMatrix = ArrayWithOrderedValues(myMatrix);
 PrintMatrix(myNewMatrix);
